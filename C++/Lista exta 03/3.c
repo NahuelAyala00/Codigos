@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+Faça um programa que leia dez números inteiros e calcule a diferença entre o maior e o menor número do conjunto.
+*/
 int main(void){
     int numeros, menor, maior, i;
 
