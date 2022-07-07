@@ -6,20 +6,9 @@ cada conversão devera ter uma função que receba o valor e retorne o valor con
 #include <stdio.h>
 #include <stdlib.h>
 
-int DolarPraReal(float dolar){
-    float ResReal;
+int DolarPraReal(float dolar);
 
-    ResReal =5.42*dolar;
-    printf("\n%.2f Reais\n",ResReal);
-}
-
-int RealPraDolar(float real){
-    float ResDolar;
-
-    ResDolar =real/5.42;
-    printf("\n%.2f Dolares\n",ResDolar);
-}
-
+int RealPraDolar(float real);
 
 int main (){
     int converter, i;
@@ -56,4 +45,18 @@ int main (){
     printf("\n");
 
     return 0;
+}
+
+int DolarPraReal(float dolar){
+    float ResReal;
+
+    ResReal =5.42*dolar;
+    printf("\n%.2f Reais\n",ResReal);
+}
+
+int RealPraDolar(float real){
+    float ResDolar;
+
+    ResDolar =real/5.42;
+    printf("\n%.2f Dolares\n",ResDolar);
 }

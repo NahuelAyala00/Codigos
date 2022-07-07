@@ -6,12 +6,7 @@ como argumento o tipo de caractere e o número de linhas que deverá imprimir.
 #include <stdio.h>
 #include <stdlib.h>
 
-int desenho (char letra, int linhas){
-    int i,linha;
-    for(i=0;i<linhas;i++){
-        printf("%c",letra);
-    }
-}
+int desenho (char letra, int linhas);
 
 int main (){
     char c;
@@ -31,4 +26,11 @@ int main (){
     printf("\n\n");
 
     return 0;
+}
+
+int desenho (char letra, int linhas){
+    int i,linha;
+    for(i=0;i<linhas;i++){
+        printf("%c",letra);
+    }
 }

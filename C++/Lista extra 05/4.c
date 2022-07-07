@@ -7,27 +7,7 @@ os caracteres ‘+’ , ‘-’ e ‘| ‘. A função receberá a quantidade de
 #include <stdio.h>
 #include <stdlib.h>
 
-int retangulo(int h, int c){
-    int n;
-    char espaco = '\0';
-
-    printf("+");
-    for(n=0;n<c;n++){
-        printf("-");
-    }
-    printf("+");
-    printf("\n");
-    
-    for(n=0;n<h;n++){
-        printf("|%s|\n",espaco); //falta a coluna da direita
-    }
-    printf("+");
-        for(n=0;n<c;n++){
-        printf("-");
-    }
-    printf("+");
-
-}
+int retangulo(int h, int c);
 
 int main (){
     int altura, comprimento, i;
@@ -57,4 +37,26 @@ int main (){
     retangulo(altura,comprimento);
     }
     return 0;
+}
+
+int retangulo(int h, int c){
+    int n;
+    char espaco = '\0';
+
+    printf("+");
+    for(n=0;n<c;n++){
+        printf("-");
+    }
+    printf("+");
+    printf("\n");
+    
+    for(n=0;n<h;n++){
+        printf("|%s|\n",espaco); //falta a coluna da direita
+    }
+    printf("+");
+        for(n=0;n<c;n++){
+        printf("-");
+    }
+    printf("+");
+
 }
