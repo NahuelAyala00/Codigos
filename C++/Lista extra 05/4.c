@@ -9,6 +9,7 @@ os caracteres ‘+’ , ‘-’ e ‘| ‘. A função receberá a quantidade de
 
 int retangulo(int h, int c){
     int n;
+    char espaco = '\0';
 
     printf("+");
     for(n=0;n<c;n++){
@@ -16,8 +17,9 @@ int retangulo(int h, int c){
     }
     printf("+");
     printf("\n");
+    
     for(n=0;n<h;n++){
-        printf("|\n");
+        printf("|%s|\n",espaco); //falta a coluna da direita
     }
     printf("+");
         for(n=0;n<c;n++){
