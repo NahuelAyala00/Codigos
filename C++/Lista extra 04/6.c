@@ -9,24 +9,34 @@ maior ou igual a 7.0
 #include <stdlib.h>
 
 int main (){
-    int a, n, cont=0;
-    float v[40], notas;
+    int n, cont=0,i;
+    float v[40], soma=0, MediaDosAlunos[10], notas[40];
 
-    for(a=0;a<10;a++){
-        printf("Notas do %i Aluno:\n",a+1);
+    for(i=0;i<10;i++){
+        printf("Notas do %i Aluno:\n",i+1);
         for(n=0;n<4;n++){
-            printf("Informe sua %i nota:",n+1);
-            scanf("%f",&notas); 
+            printf("Nota %i:",n+1);
+            scanf("%f",&v[i]); 
             fflush(stdin);
-            if(notas >= 0 && notas <= 10){
-                v[i]=notas;
-            }if (notas >= 7 && notas <=10){
-                cont++;
-            }    
+            if(v[i] < 0 || v[i] > 10){
+                printf("Informe uma nota valida!\n");
+                n--;
+            }
+            notas[i]=v[i];
               }
+        MediaDosAlunos[i]=notas[i]/4;
+    }
+    if(MediaDosAlunos[i] >= 7 || MediaDosAlunos[i] <= 10){
+        cont++;
     }
 
-    printf("A");
+    printf("\nO numero de alunos com media >= 7 foi de %i\n",cont);
+    for(i=0;i<10;i++){
+    printf("%.2f,",MediaDosAlunos[i]);
+    }
+   
+
+    printf("\n\n");
 
     return 0;
 }
