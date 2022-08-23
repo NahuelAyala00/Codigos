@@ -1,5 +1,5 @@
 package Exercicios.JAVA.AULA1;
-
+import java.util.Scanner;
 /*
 7) Calcular e apresentar o valor do volume de uma lata de óleo, utilizando fórmula: V = 3.14159 * R * R * A, 
 em que as variáveis: V, R e A representam respectivamente o volume, o raio e a altura. 
@@ -8,5 +8,12 @@ Agora vamos escrever a fórmula, conforme dita no enunciado e, em seguida, exibi
 resultado do volume encontrado.
  */
 public class exercicio7 {
-    
+    public static void main(String [] aStrings ){
+        
+        double R = 2;
+        double A = 4;
+        double V = 3.14159 * R * R * A;
+
+    System.out.println("Volume de uma lata de oleo = "+V+" cm^3");
+    }
 }
