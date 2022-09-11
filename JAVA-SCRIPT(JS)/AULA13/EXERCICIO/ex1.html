@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios aula13</title>
+</head>
+
+<body>
+
+
+    <script>
+        const nome = prompt(`Digite seu nome completo:`);
+        /* no console do browser
+        window.document.body.innerHTML
+        (retornara todo o html da pagina)
+        window.document.body.innerHTML = 'Mudar HTML';
+        (= se le como recebe)
+        window.document.body.innerHTML = 'Mudar HTML <br/>';
+        */
+        document.body.innerHTML += `O seu nome é ${nome} <br />`;
+        document.body.innerHTML += `Seu nome tem ______ letras<br />`;
+        document.body.innerHTML += `A segunda letra do seu nome é: ______<br />`;
+        document.body.innerHTML += `Qual o primeiro índice da letra LETRA no seu nome? ______<br />`;
+        document.body.innerHTML += `Qual o último índice da letra LETRA no seu nome? ______<br />`;
+        document.body.innerHTML += `As últimas 3 letras do seu nome são: ______<br />`;
+        document.body.innerHTML += `As palavras do seu nome são: ______<br />`;
+        document.body.innerHTML += `Seu nome com letras maiúsculas: ______<br />`;
+        document.body.innerHTML += `Seu nome com letras minúsculas: ______<br />`;
+    </script>
+</body>
+
+</html>

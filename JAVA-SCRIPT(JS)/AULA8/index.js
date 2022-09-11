@@ -1,7 +1,7 @@
 const nome = `Nahuel Isaias`;
 const sobrenome = `Ayala`;
 const idade = `21`;
-const altura = `1.85`
+const altura = `1.85`;
 const peso = `90`;
 let imc = peso; // peso/(altura*altura)
 let anoNascimento = 2022 - idade;
