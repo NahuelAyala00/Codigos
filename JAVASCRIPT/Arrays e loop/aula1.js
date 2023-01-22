@@ -39,3 +39,6 @@ for (; numero < maximo;) {
     console.log(numero);
     numero++;
 }
+
+var nome1 = "Yapo";
+console.log(nome1);
